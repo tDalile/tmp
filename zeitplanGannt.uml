@@ -1,0 +1,64 @@
+@startgantt
+' project settings
+Project starts 2022-08-01
+printscale daily
+
+!theme vibrant
+
+%date("yyyy-MM-dd") is colored in salmon
+
+' General milestones
+[Init] happens at 2022-08-01
+
+' task duration
+[Brainstorming] lasts 10 days
+
+' task start
+[Brainstorming] starts 2022-08-01
+[Erste Recherche] starts 5 days before [Brainstorming]'s end 
+
+' task end
+[Erste Recherche] ends at 2022-08-16 
+[Festlegung Titel] happens 1 day after [Erste Recherche]´s end 
+[Research proposal] starts at [Festlegung Titel]'s end and ends at 2022-08-25
+
+' tasks
+[Sync WB] happens at 2022-08-19
+[Abgabe Research proposal] happens after [Research proposal]´s end
+[Abgabe Research proposal] -> [Präsentation vorbereiten] 
+[Präsentation WB] happens at 2022-09-02
+[Präsentation vorbereiten] ends at 2022-09-01
+
+[Anmeldung] starts at [Präsentation WB]'s end and lasts 4 days
+
+[Start?] happens 2 days after [Anmeldung]´s start 
+[Ende] happens 122 days after [Start?]'s end
+
+
+' thesis parts
+[Strukturplanung] lasts 7 days
+[Hauptteil] lasts 60 days
+[Fazit] lasts 10 days
+[Einleitung] lasts 20 days
+[Prototyp] lasts 80 days
+[Korrekturlesen] lasts 10 days
+[Formatierung] lasts 3 days
+[Drucken] lasts 4 days
+
+[Strukturplanung] starts at [Start?]´s end
+[Hauptteil] starts at [Strukturplanung]'s end 
+[Fazit] starts at [Hauptteil]´s end
+[Einleitung] starts 2 days before [Fazit]´s end
+[Prototyp] starts 5 days after [Hauptteil]´s start 
+[Korrekturlesen] starts after [Einleitung]´s end
+[Formatierung] starts after [Korrekturlesen]´s end
+[Drucken] ends 3 days before [Ende]´s start
+'[Abgabe Thesis]
+'[Kolloquium]
+
+
+
+
+
+
+@endgantt
