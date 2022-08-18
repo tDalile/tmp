@@ -29,31 +29,52 @@ printscale daily
 [Präsentation WB] happens at 2022-09-02
 [Präsentation vorbereiten] ends at 2022-09-01
 
-[Anmeldung] starts at [Präsentation WB]'s end and lasts 4 days
+[Anmeldung] starts at [Präsentation WB]'s end and lasts 15 days
 
-[Start?] happens 2 days after [Anmeldung]´s start 
-[Ende] happens 122 days after [Start?]'s end
+[Start?] happens 5 days before [Anmeldung]´s end 
 
 
 ' thesis parts
-[Strukturplanung] lasts 7 days
-[Hauptteil] lasts 60 days
-[Fazit] lasts 10 days
-[Einleitung] lasts 20 days
-[Prototyp] lasts 80 days
-[Korrekturlesen] lasts 10 days
-[Formatierung] lasts 3 days
-[Drucken] lasts 4 days
 
 [Strukturplanung] starts at [Start?]´s end
-[Hauptteil] starts at [Strukturplanung]'s end 
-[Fazit] starts at [Hauptteil]´s end
+[Strukturplanung] lasts 7 days
+
+[Hauptteil/Methode 1] starts at [Strukturplanung]'s end 
+[Hauptteil/Methode 1] lasts 30 days
+
+[Prototyp 1] starts 5 days after [Hauptteil/Methode 1]´s start 
+[Prototyp 1] lasts 20 days
+
+[Artefakte 1] happens at [Hauptteil/Methode 1]´s end
+
+[Hauptteil/Methode 2] starts at [Artefakte 1]'s end 
+[Hauptteil/Methode 2] lasts 30 days
+
+[Prototyp 2] starts 5 days after [Hauptteil/Methode 2]´s start 
+[Prototyp 2] lasts 20 days
+
+[Artefakte 2] happens at [Hauptteil/Methode 2]´s end
+
+[*Puffer*] starts at [Artefakte 2]´s end
+[*Puffer*] lasts 10 days
+
+[Fazit] starts at [*Puffer*]´s end
+[Fazit] lasts 10 days
+
 [Einleitung] starts 2 days before [Fazit]´s end
-[Prototyp] starts 5 days after [Hauptteil]´s start 
+[Einleitung] lasts 10 days
+
 [Korrekturlesen] starts after [Einleitung]´s end
+[Korrekturlesen] lasts 10 days
+
 [Formatierung] starts after [Korrekturlesen]´s end
+[Formatierung] lasts 3 days
+
+[Ende] happens 122 days after [Start?]'s end
 [Drucken] ends 3 days before [Ende]´s start
-'[Abgabe Thesis]
+[Drucken] lasts 4 days
+
+[Abgabe Thesis] ends 2 days before [Ende]´s start
 '[Kolloquium]
 
 
