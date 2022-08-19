@@ -33,7 +33,6 @@ language de
 [Präsentation vorbereiten] ends at 2022-09-16
 [Präsentation WB] happens after [Präsentation vorbereiten]´s end
 
--- Phase Vorbereitung  --
 
 [Anmeldung] starts at [Präsentation vorbereiten]'s end and lasts 15 days
 
@@ -42,8 +41,11 @@ language de
 
 ' thesis parts
 
+
 [Strukturplanung] starts at [Start?]´s end
 [Strukturplanung] lasts 7 days
+
+-- Phase Artefakte 1 --
 
 [Hauptteil/Methode 1] starts at [Strukturplanung]'s end 
 [Hauptteil/Methode 1] lasts 30 days
@@ -53,7 +55,7 @@ language de
 
 [Artefakte 1] happens at [Hauptteil/Methode 1]´s end
 
--- Phase Artefakte 1 --
+-- Phase Artefakte 2 --
 
 [Hauptteil/Methode 2] starts at [Hauptteil/Methode 1]'s end 
 [Hauptteil/Methode 2] lasts 30 days
@@ -63,7 +65,7 @@ language de
 
 [Artefakte 2] happens at [Hauptteil/Methode 2]´s end
 
--- Phase Artefakte 2 --
+-- Phase Puffer --
 
 [*Puffer*] starts at [Hauptteil/Methode 2]´s end
 [*Puffer*] lasts 10 days
