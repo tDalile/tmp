@@ -3,6 +3,7 @@
 Project starts 2022-08-01
 printscale daily
 
+language de
 !theme vibrant
 
 %date("yyyy-MM-dd") is colored in salmon
@@ -10,7 +11,10 @@ printscale daily
 ' General milestones
 [Init] happens at 2022-08-01
 
-' task duration
+' General dates
+2022-08-26 to 2022-09-09 is closed and are named [WB Urlaub]
+
+'task duration
 [Brainstorming] lasts 10 days
 
 ' task start
@@ -20,16 +24,18 @@ printscale daily
 ' task end
 [Erste Recherche] ends at 2022-08-16 
 [Festlegung Titel] happens 1 day after [Erste Recherche]´s end 
-[Research proposal] starts at [Festlegung Titel]'s end and ends at 2022-08-25
+[Sync WB] happens at 2022-08-19
+[Research proposal] starts at [Sync WB]'s end and ends at 2022-09-12
 
 ' tasks
-[Sync WB] happens at 2022-08-19
 [Abgabe Research proposal] happens after [Research proposal]´s end
-[Abgabe Research proposal] -> [Präsentation vorbereiten] 
-[Präsentation WB] happens at 2022-09-02
-[Präsentation vorbereiten] ends at 2022-09-01
+[Research proposal] -> [Präsentation vorbereiten] 
+[Präsentation vorbereiten] ends at 2022-09-16
+[Präsentation WB] happens after [Präsentation vorbereiten]´s end
 
-[Anmeldung] starts at [Präsentation WB]'s end and lasts 15 days
+-- Phase Vorbereitung  --
+
+[Anmeldung] starts at [Präsentation vorbereiten]'s end and lasts 15 days
 
 [Start?] happens 5 days before [Anmeldung]´s end 
 
@@ -47,7 +53,9 @@ printscale daily
 
 [Artefakte 1] happens at [Hauptteil/Methode 1]´s end
 
-[Hauptteil/Methode 2] starts at [Artefakte 1]'s end 
+-- Phase Artefakte 1 --
+
+[Hauptteil/Methode 2] starts at [Hauptteil/Methode 1]'s end 
 [Hauptteil/Methode 2] lasts 30 days
 
 [Prototyp 2] starts 5 days after [Hauptteil/Methode 2]´s start 
@@ -55,7 +63,9 @@ printscale daily
 
 [Artefakte 2] happens at [Hauptteil/Methode 2]´s end
 
-[*Puffer*] starts at [Artefakte 2]´s end
+-- Phase Artefakte 2 --
+
+[*Puffer*] starts at [Hauptteil/Methode 2]´s end
 [*Puffer*] lasts 10 days
 
 [Fazit] starts at [*Puffer*]´s end
@@ -63,6 +73,8 @@ printscale daily
 
 [Einleitung] starts 2 days before [Fazit]´s end
 [Einleitung] lasts 10 days
+
+-- Phase Abschluss --
 
 [Korrekturlesen] starts after [Einleitung]´s end
 [Korrekturlesen] lasts 10 days
