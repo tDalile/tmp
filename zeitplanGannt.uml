@@ -25,12 +25,12 @@ language de
 [Erste Recherche] ends at 2022-08-16 
 [Festlegung Titel] happens 1 day after [Erste Recherche]´s end 
 [Sync WB] happens at 2022-08-19
-[Research proposal] starts at [Sync WB]'s end and ends at 2022-09-12
+[Research proposal] starts at [Sync WB]'s end and ends at 2022-09-20
 
 ' tasks
 [Abgabe Research proposal] happens after [Research proposal]´s end
 [Research proposal] -> [Präsentation vorbereiten] 
-[Präsentation vorbereiten] ends at 2022-09-16
+[Präsentation vorbereiten] ends at 2022-09-24
 [Präsentation WB] happens after [Präsentation vorbereiten]´s end
 
 
