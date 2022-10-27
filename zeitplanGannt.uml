@@ -28,10 +28,13 @@ language de
 [Research proposal] starts at [Sync WB]'s end and ends at 2022-09-20
 
 ' tasks
-[Abgabe Research proposal] happens after [Research proposal]´s end
-[Research proposal] -> [Präsentation vorbereiten] 
-[Präsentation vorbereiten] ends at 2022-09-24
-[Präsentation WB] happens after [Präsentation vorbereiten]´s end
+[Abgabe Research proposal 1] happens after [Research proposal]´s end
+[Research proposal überarbeiten] starts at [Abgabe Research proposal 1]´s end
+[Research proposal überarbeiten] ends at 2022-10-25
+[Abgabe Research proposal 2] happens after [Research proposal überarbeiten]´s end
+[Präsentation vorbereiten] starts at [Abgabe Research proposal 2]´s end
+[Präsentation vorbereiten] ends at 2022-10-27
+[Präsentation WB/FK] happens after [Präsentation vorbereiten]´s end
 
 
 [Anmeldung] starts at [Präsentation vorbereiten]'s end and lasts 15 days
